@@ -1,12 +1,10 @@
 package Car;
-
 import java.util.Scanner;
 
 public class CarsData {
     public static final String TANISHTIRUV = "Online mashina bozorimizga xush kelibsiz!";
 
     public static final String TANISHTIRUV_RU = "Добро пожаловать на наш интернет-авторынок!";
-
 
     public static class Main{
         static String email = "123456@gmail.com";

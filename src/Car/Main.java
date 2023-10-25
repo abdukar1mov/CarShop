@@ -8,19 +8,18 @@ public class Main {
 
     static char language = 'e';
     public static void main(String args[]){
-        int user = (new Scanner(System.in).nextInt());
-        switch (user){
-            case 1:
-                registration();
-                break;
-            case 2:
-                logination();
-                break;
-            default:
-        }
+//        int user = (new Scanner(System.in).nextInt());
+//        switch (user){
+//            case 1:
+//                registration();
+//                break;
+//            case 2:
+//                logination();
+//                break;
+//            default:
+//        }
         while(true){
             System.out.println("""
-                        
                         1.UZB
                         2.EN
                         """);
@@ -34,7 +33,7 @@ public class Main {
             System.out.println(language == 'u' ? TANISHTIRUV : TANISHTIRUV_EN);
             System.out.println(language == 'u' ? EMAIL_UZ : EMAIL_EN);
             String email  = (new Scanner(System.in).next());
-
+            System.out.println(language == 'u' ? PASSWORD_UZ: PASSWORD_EN);
             int correctPassword = (new Scanner(System.in).nextInt());
             if (correctPassword == password){
                 boolean exit = true;
@@ -79,15 +78,22 @@ public class Main {
     }
 
     private static void changeLanguage() {
-        System.out.println("Change lan");
+        System.out.println("""
+                1. EN
+                2. UZ
+                """);
+        int changeLanguage = (new Scanner(System.in).nextInt());
+        if (changeLanguage == 1){
+            language = 'e';
+        }else language = 'u';
     }
 
     private static void aboutUs() {
-        System.out.println("About us");
+
     }
 
     private static void settings() {
-        System.out.println("Setting");
+
     }
 
     private static void category() {

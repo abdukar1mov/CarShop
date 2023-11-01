@@ -1,11 +1,13 @@
 package Car;
 import static Car.CarsData.*;
 import java.util.Scanner;
-
+import static Car.Cars.*;
+import java.io.FileReader;
+import java.io.IOException;
 public class Main {
+
     static String email = "123456@gmail.com";
     static int password = 12345;
-
     static char language = 'e';
     public static void main(String args[]){
 //        int user = (new Scanner(System.in).nextInt());
@@ -18,6 +20,23 @@ public class Main {
 //                break;
 //            default:
 //        }
+//        try {
+//            Object obj = parser.parse(new FileReader("D:\\JAVA-projects\\Lesson\\carShop\\src\\Car\\db.json"));
+//            JSONObject jsonObject = (JSONObject)obj;
+//            String name = (String)jsonObject.get("Name");
+//            String course = (String)jsonObject.get("Course");
+//            JSONArray subjects = (JSONArray)jsonObject.get("Subjects");
+//            System.out.println("Name: " + name);
+//            System.out.println("Course: " + course);
+//            System.out.println("Subjects:");
+//            Iterator iterator = subjects.iterator();
+//            while (iterator.hasNext()) {
+//                System.out.println(iterator.next());
+//            }
+//        } catch(Exception e) {
+//            e.printStackTrace();
+//        }
+
         while(true){
             System.out.println("""
                         1.UZB
@@ -43,6 +62,14 @@ public class Main {
                     switch (menu){
                         case 1:
                             category();
+                            System.out.println(CATEGORY);
+                            int a = (new Scanner(System.in).nextInt());
+                            if (a == 1){
+                                System.out.println(CARS_MODEL);
+                                String carmodel = (new Scanner(System.in).nextLine());
+
+                            }else break;
+
                             break;
                         case 2:
                             settings();
@@ -97,7 +124,6 @@ public class Main {
     }
 
     private static void category() {
-        System.out.println("Categor");
     }
 
     private static void categoryMenu() {

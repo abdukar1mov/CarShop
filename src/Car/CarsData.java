@@ -27,4 +27,10 @@ public class CarsData {
             4. Til ozgartirish
             5. Chiqish
             """;
+
+    public static final String CATEGORY= """
+            1. Sedan
+            2. Sport  Turismo
+            3. Cross Turismo
+            """;
 }

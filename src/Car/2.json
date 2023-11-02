@@ -1,0 +1,100 @@
+{
+  "login": [
+    {
+      "id": "",
+      "logEmail": "",
+      "password": ""
+    },
+    {
+      "id": 1,
+      "logEmail": "admin@admin.com",
+      "password": "admin"
+    }
+  ],
+  "register":[
+    {
+      "id": "",
+      "registerEmail": "",
+      "registerPassword": ""
+    }
+  ],
+  "carsCategory": [
+    {
+      "name": "Sedan",
+      "subcategories": [
+        "Taycan",
+        "Taycan 4s",
+        "Taycan Gts",
+        "Taycan Turbo",
+        "Taycan Turbo С"
+      ]
+    },
+    {
+      "name": "Sport Turismo",
+      "subcategories": [
+        "Taycan Gts Sport Turismo"
+      ]
+    },
+    {
+      "name": "Cross Turismo",
+      "subcategories": [
+        "Taycan  4 Cross Turismo",
+        "Taycan 4s Cross Turismo",
+        "Taycan Turbo Cross Turismo ",
+        "Taycan Turbo С Cross Turismo"
+      ]
+    }
+  ],
+  "cars": [
+    {
+      "model": "Taycan",
+      "price": "From 90,900$",
+      "charackters": "282 miles** (AMCI test range) with Performance Plus battery"
+    },
+    {
+      "model": "Taycan 4s",
+      "price": "From 101,900$",
+      "charackters": "282 miles** (AMCI test range) with Performance Plus battery"
+    },
+    {
+      "model": "Taycan Gts",
+      "price": ".From 111,700$",
+      "charackters": "Range (EPA Estimated)"
+    },
+    {
+      "model": "Taycan Turbo",
+      "price": "From 160,800$",
+      "charackters": ".275 miles** (AMCI test range) with Performance Plus battery"
+    },
+    {
+      "model": "Taycan Turbo С",
+      "price": "From 194,900$",
+      "charackters": "278 miles** (AMCI test range) with Performance Plus battery"
+    },
+    {
+      "model": "Taycan Gts Sport Turismo",
+      "price": "From 141,200$",
+      "charackters": "Range (EPA Estimated)"
+    },
+    {
+      "model": "Taycan  4 Cross Turismo",
+      "price": "From 90,900$",
+      "charackters": "282 miles** (AMCI test range) with Performance Plus battery"
+    },
+    {
+      "model": "Taycan 4s Cross Turismo",
+      "price": "From 90,900$",
+      "charackters": "282 miles** (AMCI test range) with Performance Plus battery"
+    },
+    {
+      "model": "Taycan",
+      "price": "From 90,900$",
+      "charackters": "282 miles** (AMCI test range) with Performance Plus battery"
+    },
+    {
+      "model": "Taycan",
+      "price": "From 90,900$",
+      "charackters": "282 miles** (AMCI test range) with Performance Plus battery"
+    }
+  ]
+}

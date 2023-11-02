@@ -1,12 +1,10 @@
 package Car;
 import static Car.CarsData.*;
 import java.util.Scanner;
-import static Car.Cars.*;
-import java.io.FileReader;
-import java.io.IOException;
+
 public class Main {
 
-    static String email = "123456@gmail.com";
+    String email = "123456@gmail.com";
     static int password = 12345;
     static char language = 'e';
     public static void main(String args[]){
@@ -51,7 +49,6 @@ public class Main {
 
             System.out.println(language == 'u' ? TANISHTIRUV : TANISHTIRUV_EN);
             System.out.println(language == 'u' ? EMAIL_UZ : EMAIL_EN);
-            String email  = (new Scanner(System.in).next());
             System.out.println(language == 'u' ? PASSWORD_UZ: PASSWORD_EN);
             int correctPassword = (new Scanner(System.in).nextInt());
             if (correctPassword == password){
@@ -62,17 +59,22 @@ public class Main {
                     switch (menu){
                         case 1:
                             category();
-                            System.out.println(CATEGORY);
                             int a = (new Scanner(System.in).nextInt());
                             if (a == 1){
-                                System.out.println(CARS_MODEL);
-                                String carmodel = (new Scanner(System.in).nextLine());
-
-                            }else break;
+                                System.out.println(CARS_MODEL_SEDAN);
+                                break;
+                            }else if(a == 2){
+                                System.out.println(CARS_MODEL_CROSS_TURISMO);
+                                break;
+                            } else if (a == 3) {
+                                System.out.println(CARS_MODEL_SPORT_TURISMO);
+                                break;
+                            }
 
                             break;
                         case 2:
                             settings();
+
                             break;
                         case 3:
                             aboutUs();
@@ -116,7 +118,7 @@ public class Main {
     }
 
     private static void aboutUs() {
-
+        System.out.println(language == 'e' ? ABOUT_US_UZ : ABOUT_US_EN);
     }
 
     private static void settings() {
@@ -124,6 +126,7 @@ public class Main {
     }
 
     private static void category() {
+        System.out.println(language == 'e' ? CATEGORY : CATEGORY);
     }
 
     private static void categoryMenu() {
